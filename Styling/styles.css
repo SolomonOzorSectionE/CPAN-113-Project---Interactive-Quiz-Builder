@@ -389,3 +389,48 @@ body {
     color: green;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+.results-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.result-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.result-card h2 {
+    font-size: 20px;
+    color: #1f3b5b;
+    margin-bottom: 15px;
+}
+
+.result-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.results-note {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
