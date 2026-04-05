@@ -1,31 +1,24 @@
 const quizList = document.getElementById("quizList");
 const quizzes = JSON.parse(localStorage.getItem("quizzes")) || [];
 
+quizList.innerHTML = "";
+
 if (quizzes.length === 0) {
-    quizList.innerHTML = "<p class='empty-message'>No quizzes have been created yet.</p>";
+    quizList.innerHTML = "<p class='empty-message'>No quizzes available.</p>";
 } else {
-    for (let i = 0; i < quizzes.length; i++) {
-        const quiz = quizzes[i];
+    quizzes.forEach(function (quiz, index) {
+
+        if (!quiz.questions || !Array.isArray(quiz.questions)) {
+            return; // skip bad data safely
+        }
 
         const quizCard = document.createElement("div");
         quizCard.className = "quiz-card";
 
-        let optionsList = "";
-
-        for (let j = 0; j < quiz.options.length; j++) {
-            if (j === quiz.correctAnswer) {
-                optionsList += "<li><strong>" + quiz.options[j] + "</strong> (Correct Answer)</li>";
-            } else {
-                optionsList += "<li>" + quiz.options[j] + "</li>";
-            }
-        }
-
         quizCard.innerHTML =
-            "<h2>" + (i + 1) + ". " + quiz.quizTitle + "</h2>" +
-            "<p><strong>Question:</strong> " + quiz.question + "</p>" +
-            "<p><strong>Options:</strong></p>" +
-            "<ul>" + optionsList + "</ul>";
+            "<h2>" + (index + 1) + ". " + quiz.name + "</h2>" +
+            "<p><strong>Total Questions:</strong> " + quiz.questions.length + "</p>";
 
         quizList.appendChild(quizCard);
-    }
+    });
 }

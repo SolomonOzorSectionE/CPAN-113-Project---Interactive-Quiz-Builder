@@ -7,22 +7,25 @@
     <link rel="stylesheet" href="../Styling/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">QuizBuilder</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="create-quiz.html">Create Quiz</a></li>
-            <li><a href="all-quizzes.html">All Quizzes</a></li>
-            <li><a href="answer-bank.html">Answer Bank</a></li>
-            <li><a href="results.html" class="active">Quiz Results</a></li>
-        </ul>
+    <nav>
+        <div class="nav-container">
+            <h2>QuizBuilder</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-quiz.html">Create Quiz</a></li>
+                <li><a href="all-quizzes.html">All Quizzes</a></li>
+                <li><a href="take-quiz.html">Take Quiz</a></li>
+                <li><a href="answer-bank.html">Answer Bank</a></li>
+                <li><a href="results.html">Quiz Results</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="page-container">
         <section class="form-section">
             <h1>Quiz Results</h1>
             <p class="page-description">
-                View a simple summary of quiz data saved in the system.
+                View your latest quiz result and overall quiz summary.
             </p>
 
             <div class="results-grid">
@@ -42,11 +45,12 @@
                 </div>
             </div>
 
-            <div class="results-note">
-                <p>
-                    This page currently shows a simple summary of stored quiz data.
-                    More advanced result tracking can be added in a later phase.
-                </p>
+            <div class="latest-result-box">
+                <h2>Latest Quiz Result</h2>
+                <p><strong>Quiz Name:</strong> <span id="latestQuizName">None</span></p>
+                <p><strong>Score:</strong> <span id="latestQuizScore">0%</span></p>
+                <p><strong>Correct Answers:</strong> <span id="latestCorrectAnswers">0</span></p>
+                <p><strong>Total Questions:</strong> <span id="latestTotalQuestions">0</span></p>
             </div>
         </section>
     </main>
