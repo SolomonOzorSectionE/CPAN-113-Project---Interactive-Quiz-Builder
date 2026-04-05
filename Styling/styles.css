@@ -376,3 +376,16 @@ body {
     color: #555;
     margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
