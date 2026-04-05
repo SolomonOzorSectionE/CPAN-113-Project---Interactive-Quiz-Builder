@@ -83,25 +83,25 @@ An interactive quiz builder website where users can create quiz questions, attem
 ## Feature Demonstration
 
 ### Home Page
-![Home](assets/home.png)
+![Home](assets/home%20page.png)
 
 ### Create Quiz Page
-![Create Quiz](assets/create-quiz.png)
+![Create Quiz](assets/create%20quiz%20page.png)
 
 ### All Quizzes Page
-![All Quizzes](assets/all-quizzes.png)
+![All Quizzes](assets/all%20quizzes%20page.png)
 
 ### Take Quiz Page
-![Take Quiz](assets/take-quiz.png)
+![Take Quiz](assets/take%20quiz%20page.png)
 
 ### Selected Quiz Page
-![Selected Quiz](assets/selected-quiz.png)
+![Selected Quiz](assets/selected%20take%20quiz%20page.png)
 
 ### Answer Bank Page
-![Answer Bank](assets/answer-bank.png)
+![Answer Bank](assets/answer%20bank%20page.png)
 
 ### Quiz Results Page
-![Results](assets/results.png)
+![Results](assets/quiz%20results%20page.png)
 
 ### Multiple Questions Feature
-![Multiple Questions](assets/multiple-questions.png)
+![Multiple Questions](assets/adding%20multiple%20questions%20into%20a%20quiz.png)
