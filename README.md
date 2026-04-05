@@ -1,4 +1,3 @@
-
 # Cpan 113 Project - Interactive Quiz Builder
 
 ## 1. Project Concept and Purpose
@@ -11,53 +10,71 @@ An interactive quiz builder website where users can create quiz questions, attem
 - Attempt quizzes interactively with immediate feedback
 - Track quiz performance and scores
 - Build personalized quizzes for studying
+- Save quizzes using local storage
+- Add multiple questions into one quiz
+- Select and take saved quizzes
+- View correct answers in the answer bank
+- Redirect to quiz results after submitting a quiz
 
-### Main Features
+## Main Features
 
 **Navigation Bar**
-- Home, Create Quiz, Answer Bank, Quiz Results
+- Home, Create Quiz, All Quizzes, Take Quiz, Answer Bank, Quiz Results
 
 **Quiz Creation Section**
-- Add questions and multiple answer options
+- Add multiple questions and multiple answer options
 - Designate correct answers
-- Store questions in the system
+- Store quizzes in the system
+- Save quizzes to local storage
+
+**All Quizzes**
+- View all created quizzes
+- Display quiz titles and saved questions
+- Organize all saved quiz data in one place
+
+**Take Quiz**
+- Select a quiz to attempt
+- Answer all questions in one session
+- Submit quiz and view results instantly
 
 **Answer Bank**
 - Repository of all created quiz questions
 - Display questions and answer choices
-- Enable question selection during quizzes
+- Show correct answers for review
 
 **Quiz Results Section**
-- Total questions answered
+- Total quizzes answered
 - Number of correct answers
 - Final score
+- Latest quiz result summary
+- Quiz performance tracking
 
 ## 2. Technologies and Tools
 
 **Frontend**
 - HTML, CSS, JavaScript
 
-**Optional Libraries**
-- Bootstrap (responsive design)
-- Chart.js (results visualization)
+**Data Storage**
+- Browser Local Storage
 
 **Deployment**
 - GitHub Pages
 
-## 3. Project Roles
+## 3. Project Ownership
 
-| Role | Team Member | Responsibilities |
-|------|------------|------------------|
-| Project Leader | Solomon | Repository management, deadline tracking, progress oversight |
-| Main Coders | Danny, Chibuikem | Core JavaScript functionality, answer checking, score calculation |
-| Assistant Coder | Liban | Quiz form implementation, answer bank display, debugging |
-| Tester | Everyone | Functionality testing and validation |
-| Writers | Solomon, Bryan | Documentation and presentation |
-| Support | Bryan | Research and development assistance |
+**Developer**
+- Solomon
+
+**Project Ownership**
+- This project was fully completed independently by Solomon.
+- All design, coding, styling, debugging, storage logic, quiz functionality, and testing were done individually.
 
 ## 4. Feature Implementation
 
 - **Navigation Bar:** Seamless multi-page navigation
 - **Quiz Creation Form:** Question and answer input with correct answer designation
+- **All Quizzes:** Displays all saved quizzes and questions
+- **Take Quiz:** Allows users to choose and complete a quiz
 - **Answer Bank:** Question storage and display system
 - **Quiz Results:** Score tracking and performance feedback
+- **Local Storage:** Saves quizzes and results in the browser
