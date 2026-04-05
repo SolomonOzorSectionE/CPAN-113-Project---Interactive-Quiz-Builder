@@ -7,47 +7,47 @@
     <link rel="stylesheet" href="../Styling/styles.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">QuizBuilder</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="create-quiz.html" class="active">Create Quiz</a></li>
-            <li><a href="all-quizzes.html">All Quizzes</a></li>
-            <li><a href="answer-bank.html">Answer Bank</a></li>
-            <li><a href="results.html">Quiz Results</a></li>
-        </ul>
+    <nav>
+        <div class="nav-container">
+            <h2>QuizBuilder</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-quiz.html">Create Quiz</a></li>
+                <li><a href="all-quizzes.html">All Quizzes</a></li>
+                <li><a href="take-quiz.html">Take Quiz</a></li>
+                <li><a href="answer-bank.html">Answer Bank</a></li>
+                <li><a href="results.html">Quiz Results</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="page-container">
         <section class="form-section">
             <h1>Create a Quiz</h1>
-            <p class="page-description">
-                Add quiz questions, possible answers, and choose the correct answer.
-            </p>
+            <p class="page-description">Create one quiz and add multiple questions to it.</p>
 
-            <form id="quizForm" class="quiz-form">
+            <div class="quiz-form">
                 <label for="quizTitle">Quiz Title</label>
-                <input type="text" id="quizTitle" placeholder="Enter quiz title" required>
+                <input type="text" id="quizTitle" placeholder="Enter quiz title">
 
                 <label for="questionText">Question</label>
-                <textarea id="questionText" placeholder="Enter your question here" required></textarea>
+                <textarea id="questionText" placeholder="Enter your question"></textarea>
 
                 <label for="option1">Option 1</label>
-                <input type="text" id="option1" placeholder="Enter option 1" required>
+                <input type="text" id="option1" placeholder="Enter option 1">
 
                 <label for="option2">Option 2</label>
-                <input type="text" id="option2" placeholder="Enter option 2" required>
+                <input type="text" id="option2" placeholder="Enter option 2">
 
                 <label for="option3">Option 3</label>
-                <input type="text" id="option3" placeholder="Enter option 3" required>
+                <input type="text" id="option3" placeholder="Enter option 3">
 
                 <label for="option4">Option 4</label>
-                <input type="text" id="option4" placeholder="Enter option 4" required>
+                <input type="text" id="option4" placeholder="Enter option 4">
 
                 <label for="correctAnswer">Correct Answer</label>
-                <select id="correctAnswer" required>
-                    <option value="">Select the correct answer</option>
+                <select id="correctAnswer">
+                    <option value="">Select correct answer</option>
                     <option value="0">Option 1</option>
                     <option value="1">Option 2</option>
                     <option value="2">Option 3</option>
@@ -55,12 +55,17 @@
                 </select>
 
                 <div class="button-group">
-                    <button type="submit" class="primary-btn">Save Question</button>
-                    <button type="button" id="clearBtn" class="secondary-btn">Clear Form</button>
+                    <button id="addQuestionBtn" class="primary-btn">Add Question</button>
+                    <button id="saveQuizBtn" class="secondary-btn">Save Quiz</button>
                 </div>
-            </form>
 
-            <p id="message" class="message"></p>
+                <p id="message" class="message"></p>
+            </div>
+
+            <div class="preview-section">
+                <h2>Questions Added</h2>
+                <div id="questionPreview"></div>
+            </div>
         </section>
     </main>
 
