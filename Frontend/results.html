@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Results - QuizBuilder</title>
     <link rel="stylesheet" href="../Styling/styles.css">
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <h2>QuizBuilder</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-quiz.html">Create Quiz</a></li>
+                <li><a href="all-quizzes.html">All Quizzes</a></li>
+                <li><a href="take-quiz.html">Take Quiz</a></li>
+                <li><a href="answer-bank.html">Answer Bank</a></li>
+                <li><a href="results.html">Quiz Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="form-section">
+            <h1>Quiz Results</h1>
+            <p class="page-description">
+                View your latest quiz result and overall quiz summary.
+            </p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <h2>Total Quizzes Created</h2>
+                    <p id="totalQuizzes" class="result-number">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h2>Quizzes Attempted</h2>
+                    <p id="attemptedQuizzes" class="result-number">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h2>Average Score</h2>
+                    <p id="averageScore" class="result-number">0%</p>
+                </div>
+            </div>
+
+            <div class="latest-result-box">
+                <h2>Latest Quiz Result</h2>
+                <p><strong>Quiz Name:</strong> <span id="latestQuizName">None</span></p>
+                <p><strong>Score:</strong> <span id="latestQuizScore">0%</span></p>
+                <p><strong>Correct Answers:</strong> <span id="latestCorrectAnswers">0</span></p>
+                <p><strong>Total Questions:</strong> <span id="latestTotalQuestions">0</span></p>
+            </div>
+        </section>
+    </main>
+
     <script src="../JavaScript/results.js"></script>
 </body>
 </html>
-
-

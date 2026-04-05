@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Quizzes - QuizBuilder</title>
+    <title>Take Quiz - QuizBuilder</title>
     <link rel="stylesheet" href="../Styling/styles.css">
 </head>
 <body>
@@ -23,12 +23,26 @@
 
     <main class="page-container">
         <section class="form-section">
-            <h1>All Quizzes</h1>
-            <p class="page-description">View all available quiz names.</p>
-            <div id="quizList" class="quiz-list"></div>
+            <h1>Take a Quiz</h1>
+            <p class="page-description">Select a quiz and answer its questions.</p>
+
+            <div class="take-quiz-controls">
+                <label for="quizSelect">Choose a Quiz</label>
+                <select id="quizSelect">
+                    <option value="">Select a quiz</option>
+                </select>
+                <button type="button" id="loadQuizBtn" class="primary-btn">Load Quiz</button>
+            </div>
+
+            <form id="takeQuizForm" class="quiz-form">
+                <div id="quizQuestions"></div>
+                <button type="submit" id="submitQuizBtn" class="secondary-btn">Submit Quiz</button>
+            </form>
+
+            <p id="takeQuizMessage" class="message"></p>
         </section>
     </main>
 
-    <script src="../JavaScript/all-quizzes.js"></script>
+    <script src="../JavaScript/take-quiz.js"></script>
 </body>
 </html>
