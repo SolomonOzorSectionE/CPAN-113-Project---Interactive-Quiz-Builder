@@ -78,3 +78,30 @@ An interactive quiz builder website where users can create quiz questions, attem
 - **Answer Bank:** Question storage and display system
 - **Quiz Results:** Score tracking and performance feedback
 - **Local Storage:** Saves quizzes and results in the browser
+
+
+## Feature Demonstration
+
+### Home Page
+![Home](assets/home.png)
+
+### Create Quiz Page
+![Create Quiz](assets/create-quiz.png)
+
+### All Quizzes Page
+![All Quizzes](assets/all-quizzes.png)
+
+### Take Quiz Page
+![Take Quiz](assets/take-quiz.png)
+
+### Selected Quiz Page
+![Selected Quiz](assets/selected-quiz.png)
+
+### Answer Bank Page
+![Answer Bank](assets/answer-bank.png)
+
+### Quiz Results Page
+![Results](assets/results.png)
+
+### Multiple Questions Feature
+![Multiple Questions](assets/multiple-questions.png)
