@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Results - QuizBuilder</title>
     <link rel="stylesheet" href="../Styling/styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">QuizBuilder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create-quiz.html">Create Quiz</a></li>
+            <li><a href="all-quizzes.html">All Quizzes</a></li>
+            <li><a href="answer-bank.html">Answer Bank</a></li>
+            <li><a href="results.html" class="active">Quiz Results</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <section class="form-section">
+            <h1>Quiz Results</h1>
+            <p class="page-description">
+                View a simple summary of quiz data saved in the system.
+            </p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <h2>Total Quizzes Created</h2>
+                    <p id="totalQuizzes" class="result-number">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h2>Quizzes Attempted</h2>
+                    <p id="attemptedQuizzes" class="result-number">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h2>Average Score</h2>
+                    <p id="averageScore" class="result-number">0%</p>
+                </div>
+            </div>
+
+            <div class="results-note">
+                <p>
+                    This page currently shows a simple summary of stored quiz data.
+                    More advanced result tracking can be added in a later phase.
+                </p>
+            </div>
+        </section>
+    </main>
+
     <script src="../JavaScript/results.js"></script>
 </body>
 </html>
-
-
